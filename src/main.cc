@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QLocale>
 
-#include "mlp_main_win.h"
+#include "maze_main_win.h"
 
 
 int main(int argc, char *argv[]) {

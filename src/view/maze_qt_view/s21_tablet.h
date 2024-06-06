@@ -3,7 +3,7 @@
 
 #include <QDialog>
 
-#include "drawingwidget.h"
+#include "maze_drawing_widget.h"
 
 namespace Ui {
 class Tablet;

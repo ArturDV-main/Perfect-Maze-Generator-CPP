@@ -1,9 +1,9 @@
-#ifndef S21_FACADE_PERCEPTRONE_
-#define S21_FACADE_PERCEPTRONE_
+#ifndef S21_FACADE_mazeE_
+#define S21_FACADE_mazeE_
 
 #include <string>
 
-#include "./s21_model_perceptron.h"
+#include "./s21_model_maze.h"
 
 namespace s21 {
 class FacadePerceptron {
@@ -28,4 +28,4 @@ class FacadePerceptron {
 };
 }  // namespace s21
 
-#endif  // S21_FACADE_PERCEPTRONE_
+#endif  // S21_FACADE_mazeE_

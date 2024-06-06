@@ -1,4 +1,4 @@
-#include "s21_model_perceptron.h"
+#include "s21_model_maze.h"
 
 std::vector<std::vector<unsigned char>> ParseCsv(const std::string& filename,
                                                  size_t image_resolution) {

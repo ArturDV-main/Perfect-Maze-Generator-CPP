@@ -11,21 +11,21 @@ qmake
 
 SOURCES += \
     ../../main.cc \
-    ../../model/s21_facade_perceptron.cc \
-    ../../model/s21_model_perceptron.cc \
-    mlp_main_win.cc \
+    ../../model/s21_facade_maze.cc \
+    ../../model/s21_model_maze.cc \
+    maze_main_win.cc \
     s21_tablet.cc
 
 HEADERS += \
-    ../../controller/s21_controller_perceptron.h \
-    ../../model/s21_facade_perceptron.h \
-    ../../model/s21_model_perceptron.h \
-    drawingwidget.h \
-    mlp_main_win.h \
+    ../../controller/s21_controller_maze.h \
+    ../../model/s21_facade_maze.h \
+    ../../model/s21_model_maze.h \
+    maze_drawing_widget.h \
+    maze_main_win.h \
     s21_tablet.h
 
 FORMS += \
-    mlp_main_win.ui \
+    maze_main_win.ui \
     s21_tablet.ui
 
 # Default rules for deployment.

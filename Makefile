@@ -4,6 +4,7 @@
 # qt6-base-dev qml-qt6 qt6-wayland qtcreator mailcap# Some commands must be used
 # sudo update-alternatives --install /usr/bin/qmake qmake /usr/bin/qmake6 100
 # sudo update-alternatives --config qmake
+# gtests
 # 
 # May some of this not need
 # make targets all, install, uninstall, clean, dvi, dist, tests
@@ -12,16 +13,16 @@
 CC = gcc
 CXXFLAGS = -std=c++17 -Wall -Werror -Wextra
 GCOV = --coverage
-TARGET = S21_MLP
+TARGET = S21_MAZE
 TESTS = tests.out
 OS = $(shell uname -s)
 GT_FLAGS = -DTESTS_OBJ_PATH='"$(shell pwd)/datasets/emnist-letters/"' -lgtest_main -lgtest -lm -lstdc++ -pthread -lm -g
-PRO_FILE = src/view/mlp_qt_view/mlp_qt_view.pro
+PRO_FILE = src/view/maze_qt_view/maze_qt_view.pro
 ARCHIVE = archive_$(TARGET)
 
 #  Project files and directories
 BUILD_DIR = build
-FOLDERS = src/controller/*.h src/model/*.h src/model/*.cc src/tests/*.cc src/view/mlp_qt_view/*.h src/view/mlp_qt_view/*.cc
+FOLDERS = src/controller/*.h src/model/*.h src/model/*.cc src/tests/*.cc src/view/maze_qt_view/*.h src/view/maze_qt_view/*.cc
 
 ifeq ($(OS), Darwin)
     LIBS := -lcheck

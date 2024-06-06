@@ -1,7 +1,7 @@
-#ifndef S21_CONTROLLER_PERCEPTRONE_
-#define S21_CONTROLLER_PERCEPTRONE_
+#ifndef S21_CONTROLLER_mazeE_
+#define S21_CONTROLLER_mazeE_
 
-#include "../model/s21_facade_perceptron.h"
+#include "../model/s21_facade_maze.h"
 
 namespace s21 {
 class ControllerPerceptron {
@@ -25,4 +25,4 @@ class ControllerPerceptron {
 };
 }  // namespace s21
 
-#endif  // S21_CONTROLLER_PERCEPTRONE_
+#endif  // S21_CONTROLLER_mazeE_

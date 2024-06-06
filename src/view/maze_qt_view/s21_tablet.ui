@@ -53,7 +53,7 @@
   <customwidget>
    <class>DrawingWidget</class>
    <extends>QWidget</extends>
-   <header>drawingwidget.h</header>
+   <header>maze_drawing_widget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

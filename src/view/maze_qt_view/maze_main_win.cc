@@ -1,6 +1,6 @@
-#include "mlp_main_win.h"
+#include "maze_main_win.h"
 
-#include "ui_mlp_main_win.h"
+#include "ui_maze_main_win.h"
 
 MlpMainWin::MlpMainWin(QWidget* parent)
     : QMainWindow(parent), ui_(new Ui::MlpMainWin) {
