@@ -6,7 +6,7 @@
 # sudo update-alternatives --config qmake
 # 
 # May some of this not need
-# 
+# make targets all, install, uninstall, clean, dvi, dist, tests
 # 
 
 CC = gcc
