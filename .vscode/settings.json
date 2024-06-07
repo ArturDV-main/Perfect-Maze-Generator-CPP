@@ -67,5 +67,6 @@
         "variant": "cpp",
         "*.ccbac": "cpp",
         "qfiledialog": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

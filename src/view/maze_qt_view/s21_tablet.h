@@ -1,5 +1,5 @@
-#ifndef S21_TABLET_H_
-#define S21_TABLET_H_
+#ifndef MAZE_S21_TABLET_H_
+#define MAZE_S21_TABLET_H_
 
 #include <QDialog>
 
