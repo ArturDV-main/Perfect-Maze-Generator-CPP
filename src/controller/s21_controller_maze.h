@@ -1,27 +1,24 @@
 #ifndef S21_CONTROLLER_mazeE_
 #define S21_CONTROLLER_mazeE_
 
-#include "../model/s21_facade_maze.h"
+#include "../model/s21_model_maze.h"
 
 namespace s21 {
-class ControllerPerceptron {
+class ControllerMaze {
  public:
-  ControllerPerceptron() = default;
-  ControllerPerceptron(const ControllerPerceptron&) = delete;
-  ControllerPerceptron(ControllerPerceptron&&) = delete;
-  ~ControllerPerceptron() = default;
-  ControllerPerceptron& operator=(const ControllerPerceptron&) = delete;
-  ControllerPerceptron& operator=(ControllerPerceptron&&) = delete;
-  void SetModel(s21::FacadePerceptron* facade) { facade_ = facade; }
-  void OpenCsv(std::string file_name, size_t image_resolution) {
-    facade_->OpenCsv(file_name, image_resolution);
+  ControllerMaze() = default;
+  ControllerMaze(const ControllerMaze&) = delete;
+  ControllerMaze(ControllerMaze&&) = delete;
+  ~ControllerMaze() = default;
+  ControllerMaze& operator=(const ControllerMaze&) = delete;
+  ControllerMaze& operator=(ControllerMaze&&) = delete;
+  void SetModel(s21::ModelMaze* model) { model_ = model; }
+  const int GetCsv() {
+    return model_->GetMaze();
   }
-  const std::vector<std::vector<unsigned char>>* GetCsv() {
-    return facade_->GetCsv();
-  }
-
  private:
-  s21::FacadePerceptron* facade_;
+  s21::ModelMaze* model_;
+
 };
 }  // namespace s21
 

@@ -1,5 +1,5 @@
-#ifndef MODEL_S21_MODEL_mazeE_
-#define MODEL_S21_MODEL_mazeE_
+#ifndef MODEL_S21_MODEL_MAZE_
+#define MODEL_S21_MODEL_MAZE_
 
 #include <fstream>
 #include <iostream>
@@ -7,9 +7,15 @@
 #include <string>
 #include <vector>
 
-enum image { lable, pixel };
+namespace s21
+{
 
-std::vector<std::vector<unsigned char>> ParseCsv(const std::string& filename,
-                                                 size_t image_resolution);
+class ModelMaze {
+  public:
+    int GetMaze();
+    int GenerateMaze(int wight, int hight);
+};
 
-#endif  // MODEL_S21_MODEL_mazeE_
+} // namespace s21
+
+#endif  // MODEL_S21_MODEL_MAZE_

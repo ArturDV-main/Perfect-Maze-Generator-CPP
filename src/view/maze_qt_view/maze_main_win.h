@@ -14,7 +14,6 @@
 #include <exception>
 
 #include "../../controller/s21_controller_maze.h"
-#include "s21_tablet.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

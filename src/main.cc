@@ -6,6 +6,7 @@
 
 int main(int argc, char *argv[]) {
   s21::ControllerPerceptron controller_obj;
+
   s21::FacadePerceptron facade_model_obj;
   QApplication a(argc, argv);
   MlpMainWin w;
