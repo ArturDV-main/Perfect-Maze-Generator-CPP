@@ -10,10 +10,17 @@
 namespace s21
 {
 
+  struct Maze{
+    int height, weight;
+    double *maze;
+  };
+
 class ModelMaze {
   public:
-    int GetMaze();
+    const Maze* GetMaze() const;
     int GenerateMaze(int wight, int hight);
+  private:
+    Maze maze_;
 };
 
 } // namespace s21

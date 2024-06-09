@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MlpMainWin</class>
- <widget class="QMainWindow" name="MlpMainWin">
+ <class>MazeMainWin</class>
+ <widget class="QMainWindow" name="MazeMainWin">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MLP</string>
+   <string>MAZE CPP</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">

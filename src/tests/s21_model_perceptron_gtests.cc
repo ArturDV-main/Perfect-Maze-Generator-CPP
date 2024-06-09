@@ -4,14 +4,14 @@
 std::string file_name = TESTS_OBJ_PATH;
 
 TEST(ModelPerceptron, StdConstruct) {
-  s21::FacadePerceptron facade_maze;
+  s21::ModelMaze facade_maze;
   int set = 0;
   if (facade_maze.IsAllGood()) set = 432;
   EXPECT_EQ(set, 432);
 }
 
 TEST(ModelPerceptron, TtrainSet) {
-  s21::FacadePerceptron facade_maze;
+  s21::ModelMaze facade_maze;
   // facade_maze.OpenCsv(file_name + "my.csv");
   facade_maze.OpenCsv(file_name + "emnist-letters-test.csv", 784);
   // facade_maze.OpenCsv(file_name + "emnist-letters-train.csv");

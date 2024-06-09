@@ -1,5 +1,5 @@
-#ifndef MLPMAINWIN_H_
-#define MLPMAINWIN_H_
+#ifndef MazeMainWin_H_
+#define MazeMainWin_H_
 
 #include <QFileDialog>
 #include <QGraphicsPixmapItem>
@@ -17,19 +17,18 @@
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class MlpMainWin;
+class MazeMainWin;
 }
 QT_END_NAMESPACE
 
-class MlpMainWin : public QMainWindow {
+class MazeMainWin : public QMainWindow {
   Q_OBJECT
 
  public slots:
-
  public:
-  MlpMainWin(QWidget *parent = nullptr);
-  ~MlpMainWin();
-  void SetControllerObj(s21::ControllerPerceptron *controller_obj) {
+  MazeMainWin(QWidget *parent = nullptr);
+  ~MazeMainWin();
+  void SetControllerObj(s21::ControllerMaze *controller_obj) {
     controller_obj_ = controller_obj;
   }
 
@@ -50,8 +49,8 @@ class MlpMainWin : public QMainWindow {
 
  private:
   QGraphicsScene *scene_;
-  s21::ControllerPerceptron *controller_obj_{};
-  Ui::MlpMainWin *ui_{};
+  s21::ControllerMaze *controller_obj_{};
+  Ui::MazeMainWin *ui_{};
   QTimer *m_timer_{};
   QPushButton *button_blink_{};
   QString data_path_1_{};
@@ -64,10 +63,9 @@ class MlpMainWin : public QMainWindow {
   //  bool m_isChecked = false;
   QImage personal_image_;
   //  !!!!!!!
-  void TabletOpen();
   void Paint();
   void BlinkingButton();
   void BlinkLogic();
   void error_message(QString message);
 };
-#endif  // MLPMAINWIN_H_
+#endif  // MazeMainWin_H_

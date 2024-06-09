@@ -12,18 +12,15 @@ qmake
 SOURCES += \
     ../../main.cc \
     ../../model/s21_model_maze.cc \
-    maze_main_win.cc \
-    s21_tablet.cc
+    maze_main_win.cc
 
 HEADERS += \
     ../../controller/s21_controller_maze.h \
     ../../model/s21_model_maze.h \
-    maze_main_win.h \
-    s21_tablet.h
+    maze_main_win.h
 
 FORMS += \
-    maze_main_win.ui \
-    s21_tablet.ui
+    maze_main_win.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -4,15 +4,15 @@
 std::string file_name_ = TESTS_OBJ_PATH;
 
 TEST(ControllerPereceptron, SetModel) {
-  s21::ControllerPerceptron controller_maze;
-  s21::FacadePerceptron facade_maze;
+  s21::ControllerMaze.h controller_maze;
+  s21::ModelMaze facade_maze;
   controller_maze.SetModel(&facade_maze);
   EXPECT_EQ(432, 432);
 }
 
 TEST(ControllerPereceptron, Train) {
-  s21::ControllerPerceptron controller_maze;
-  s21::FacadePerceptron facade_maze;
+  s21::ControllerMaze.h controller_maze;
+  s21::ModelMaze facade_maze;
   controller_maze.SetModel(&facade_maze);
 
   // facade_maze.OpenCsv(file_name + "my.csv");

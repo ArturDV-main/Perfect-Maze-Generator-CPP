@@ -5,11 +5,11 @@
 
 
 int main(int argc, char *argv[]) {
-  s21::ControllerPerceptron controller_obj;
+  s21::ControllerMaze controller_obj;
 
-  s21::FacadePerceptron facade_model_obj;
+  s21::ModelMaze facade_model_obj;
   QApplication a(argc, argv);
-  MlpMainWin w;
+  MazeMainWin w;
 
   controller_obj.SetModel(&facade_model_obj);
   w.SetControllerObj(&controller_obj);

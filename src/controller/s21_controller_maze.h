@@ -13,8 +13,9 @@ class ControllerMaze {
   ControllerMaze& operator=(const ControllerMaze&) = delete;
   ControllerMaze& operator=(ControllerMaze&&) = delete;
   void SetModel(s21::ModelMaze* model) { model_ = model; }
-  const int GetCsv() {
-    return model_->GetMaze();
+  const s21::Maze * GetMaze() const {
+    const s21::Maze * val = model_->GetMaze();
+    return val;
   }
  private:
   s21::ModelMaze* model_;
