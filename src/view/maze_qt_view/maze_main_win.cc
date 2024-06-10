@@ -46,7 +46,7 @@ void MazeMainWin::BlinkLogic() {
 
 void MazeMainWin::on_button1_set_data_clicked() {
   QString fileName2 = QFileDialog::getOpenFileName(
-      this, tr("Open Csv File"), data_path_1_, tr("CSV Files (*.csv)"));
+      this, tr("Open MAZE File"), data_path_1_, tr("MAZE Files (*.mz)"));
   if (fileName2 != "") {
     data_path_1_ = fileName2;
     try {
