@@ -46,7 +46,7 @@ install:
 uninstall: clean
 
 clean:
-	rm -r ./$(BUILD_DIR)
+	rm -r ./$(BUILD_DIR)/* ./src/view/build*
 
 dvi:
 	open dvi.html
