@@ -45,7 +45,7 @@ class MazeMainWin : public QMainWindow {
 
   void on_button5_start_edu_clicked();
 
-  void on_button6_graph_clicked();
+//  void on_button6_graph_clicked();
 
  private:
   QGraphicsScene *scene_;

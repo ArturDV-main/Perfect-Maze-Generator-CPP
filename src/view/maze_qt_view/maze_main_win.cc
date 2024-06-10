@@ -111,14 +111,14 @@ void MazeMainWin::error_message(QString message) {
   messageBox.information(0, "Info", message);
 }
 
-void MazeMainWin::on_button6_graph_clicked() {
-  load_image_5_ = true;
-  scene_->clear();
-  if (pixmapItem == nullptr) delete pixmapItem;
-  // Создаем QImage
-  // Создаем QGraphicsPixmapItem и устанавливаем изображение
-  QImage image = personal_image_.scaled(220, 220, Qt::KeepAspectRatio);
-  pixmapItem = new QGraphicsPixmapItem(QPixmap::fromImage(image));
-  // Добавляем QGraphicsPixmapItem на сцену
-  scene_->addItem(pixmapItem);
-}
+//void MazeMainWin::on_button6_graph_clicked() {
+//  load_image_5_ = true;
+//  scene_->clear();
+//  if (pixmapItem == nullptr) delete pixmapItem;
+//  // Создаем QImage
+//  // Создаем QGraphicsPixmapItem и устанавливаем изображение
+//  QImage image = personal_image_.scaled(220, 220, Qt::KeepAspectRatio);
+//  pixmapItem = new QGraphicsPixmapItem(QPixmap::fromImage(image));
+//  // Добавляем QGraphicsPixmapItem на сцену
+//  scene_->addItem(pixmapItem);
+//}
