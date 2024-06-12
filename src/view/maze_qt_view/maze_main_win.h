@@ -33,7 +33,6 @@ class MazeMainWin : public QMainWindow {
   }
 
  private slots:
-  void Toggle();
 
   void on_button1_set_data_clicked();
 
@@ -48,24 +47,22 @@ class MazeMainWin : public QMainWindow {
 //  void on_button6_graph_clicked();
 
  private:
-  QGraphicsScene *scene_;
+
+// Varebles
+  QGraphicsScene *scene_{};
   s21::ControllerMaze *controller_obj_{};
   Ui::MazeMainWin *ui_{};
-  QTimer *m_timer_{};
-  QPushButton *button_blink_{};
+
+//  QTimer *m_timer_{};
+//  QPushButton *button_blink_{};
   QString data_path_1_{};
-  QString fileName{};
+  QString file_name_{};
   bool set_data_1_{}, load_data_2_{}, add_tests_3_{}, load_tests_4_{},
       load_image_5_{};
-  //  QLabel *m_label;
-  size_t frame_counter_{};
-  QGraphicsPixmapItem *pixmapItem{};
-  //  bool m_isChecked = false;
-  QImage personal_image_;
-  //  !!!!!!!
-  void Paint();
-  void BlinkingButton();
-  void BlinkLogic();
+//  size_t frame_counter_{};
+//  QImage personal_image_{};
+
+//  Methods
   void error_message(QString message);
 };
 #endif  // MazeMainWin_H_
