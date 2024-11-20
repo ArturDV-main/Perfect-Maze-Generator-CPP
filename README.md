@@ -1,5 +1,6 @@
 # maze_lesson
 LessonCPP
+![maze](images/maze.jpg)
 
 sudo apt-get install libgtest-dev
 
