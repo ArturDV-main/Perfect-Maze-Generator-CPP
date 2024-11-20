@@ -1,4 +1,6 @@
-QT       += core gui
+QT       += core gui opengl
+mac: QT += openglwidgets
+linux: QT += openglwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,13 +13,27 @@ qmake
 
 SOURCES += \
     ../../main.cc \
+    ../../model/s21_maze.cc \
+    ../../model/s21_maze_generator.cc \
     ../../model/s21_model_maze.cc \
-    maze_main_win.cc
+    ../../model/s21_maze_loader_saver.cc \
+    ../../model/s21_maze_walker.cc \
+    button_logic.cc \
+    helpergl.cc \
+    maze_main_win.cc \
+    scenegl.cc
 
 HEADERS += \
     ../../controller/s21_controller_maze.h \
+    ../../model/s21_maze.h \
+    ../../model/s21_maze_generator.h \
     ../../model/s21_model_maze.h \
-    maze_main_win.h
+    ../../model/s21_maze_loader_saver.h \
+        ../../model/s21_maze_walker.h \
+    button_logic.h \
+    helpergl.h \
+    maze_main_win.h \
+    scenegl.h
 
 FORMS += \
     maze_main_win.ui
